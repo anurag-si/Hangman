@@ -1,0 +1,31 @@
+.keyboard {
+    width: 70%;
+    background: antiquewhite;
+    padding: 1rem;
+}
+
+.alphabet {
+    padding: 0.5rem;
+    border: 0.1rem solid gray;
+    border-radius: 0.4rem;
+    background: white;
+    cursor: pointer;
+    color: orange;
+}
+
+.alphabet-disable {
+    padding: 0.5rem;
+    border: 0.1rem solid gray;
+    border-radius: 0.4rem;
+    background: white;
+    cursor: no-drop;
+    color: red;
+    pointer-events: none;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
