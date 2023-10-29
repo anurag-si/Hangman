@@ -1,31 +1,44 @@
 .keyboard {
-    width: 70%;
-    background: antiquewhite;
-    padding: 1rem;
+  width: 66%;
+  background: antiquewhite;
+  padding: 1rem;
+  margin-top: 5rem;
+  border-radius: 0.4rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
 }
 
 .alphabet {
-    padding: 0.5rem;
-    border: 0.1rem solid gray;
-    border-radius: 0.4rem;
-    background: white;
-    cursor: pointer;
-    color: orange;
+  padding: 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid gray;
+  border-radius: 0.4rem;
+  background: white;
+  cursor: pointer;
+  width: 2rem;
+  color: orange;
 }
 
 .alphabet-disable {
-    padding: 0.5rem;
-    border: 0.1rem solid gray;
-    border-radius: 0.4rem;
-    background: white;
-    cursor: no-drop;
-    color: red;
-    pointer-events: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid gray;
+  border-radius: 0.4rem;
+  background: white;
+  cursor: no-drop;
+  color: red;
+  pointer-events: none;
+  width: 2rem;
 }
 
 .list {
-    display: flex;
-    gap: 1rem;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -1,89 +1,94 @@
 .drawingContainer {
-    width: 40%;
-    height: 30rem;
-    padding: 2rem;
-    border: 0.1rem solid saddlebrown;
+  width: 80%;
+  height: 30rem;
+  padding: 2rem;
+  border: 0.1rem solid saddlebrown;
+  border-radius: 0.4rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  background: antiquewhite;
+  margin-left: 4rem;
 }
 
 .drawing {
-    position: relative;
-    top: 4rem;
-    left: 15%;
+  position: relative;
+  top: 4rem;
+  left: 15%;
 }
 
 .topLine {
-    border: 0.1rem solid salmon;
-    width: 80%;
+  border: 0.1rem solid salmon;
+  width: 80%;
 }
 
 .bottomLine {
-    width: 60%;
-    border: 0.1rem solid salmon;
+  width: 60%;
+  border: 0.1rem solid salmon;
 }
 
 .man {
-    position: absolute;
-    top: 0;
-    left: 30%;
+  position: absolute;
+  top: 0;
+  left: 30%;
 }
 
 .verticalLine {
-    border-left: 0.2rem solid salmon;
-    height: 25rem;
+  border-left: 0.2rem solid salmon;
+  height: 25rem;
 }
 
 .rope {
-    border-left: 0.2rem solid salmon;
-    height: 4rem;
-    margin-left: 2rem;
+  border-left: 0.2rem solid salmon;
+  height: 4rem;
+  margin-left: 2rem;
 }
 
 .head {
-    border: 0.2rem solid salmon;
-    border-radius: 50%;
-    padding: 1rem;
-    width: 2rem;
-    height: 3rem;
+  border: 0.2rem solid salmon;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 2rem;
+  height: 3rem;
 }
 
 .torso {
-    border-left: 0.2rem solid salmon;
-    height: 8rem;
-    margin-left: 2rem;   
+  border-left: 0.2rem solid salmon;
+  height: 8rem;
+  margin-left: 2rem;
 }
 
 .leftArm {
-    border-left: 0.2rem solid salmon;
-    height: 4rem;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 10rem;
-    right: 3.6rem;
+  border-left: 0.2rem solid salmon;
+  height: 4rem;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10rem;
+  right: 3.6rem;
 }
 
 .rightArm {
-    border-right: 0.2rem solid salmon;
-    height: 4rem;
-    transform: rotate(130deg);
-    position: absolute;
-    right: 0.7rem;
-    top: 9.8rem;
+  border-right: 0.2rem solid salmon;
+  height: 4rem;
+  transform: rotate(130deg);
+  position: absolute;
+  right: 0.7rem;
+  top: 9.8rem;
 }
 
 .leftFoot {
-    border-left: 0.2rem solid salmon;
-    height: 4rem;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 16.7rem;
-    right: 3.6rem;
+  border-left: 0.2rem solid salmon;
+  height: 4rem;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 16.7rem;
+  right: 3.6rem;
 }
 
 .rightFoot {
-    border-right: 0.2rem solid salmon;
-    height: 4rem;
-    transform: rotate(130deg);
-    position: absolute;
-    right: 0.7rem;
-    top: 16.5rem;
+  border-right: 0.2rem solid salmon;
+  height: 4rem;
+  transform: rotate(130deg);
+  position: absolute;
+  right: 0.7rem;
+  top: 16.5rem;
 }

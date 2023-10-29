@@ -4,6 +4,7 @@ import "./App.css";
 import Keyboard from "./components/Keyboard/Keyboard";
 import Drawing from "./components/Drawing/Drawing";
 import CurrentWord from "./components/Words/CurrentWord";
+import Header from "./components/Header/Header";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState<any>();
@@ -13,33 +14,47 @@ function App() {
   const [Arr, setArr] = useState<string[]>([]);
   const [counter, setCounter] = useState<number[]>([]);
 
-  console.log(counter, "counter");
   return (
     <div className="App">
-      <Keyboard
-        showChar={showChar}
-        setShowChar={setShowChar}
-        currentWord={currentWord}
-        setCurrentWord={setCurrentWord}
-        showWord={showWord}
-        setShowWord={setShowWord}
-        counter={counter}
-        setCounter={setCounter}
-      />
-      <Drawing counter={counter} />
-      <CurrentWord
-        showChar={showChar}
-        selectedIndex={selectedIndex}
-        setSelectedIndex={setSelectedIndex}
-        currentWord={currentWord}
-        setCurrentWord={setCurrentWord}
-        setShowWord={setShowWord}
-        showWord={showWord}
-        Arr={Arr}
-        setArr={setArr}
-        counter={counter}
-        setCounter={setCounter}
-      />
+      <Header />
+      <div className="containers">
+        <div
+          style={{
+            width: "40%",
+          }}
+        >
+          <Drawing counter={counter} />
+          <CurrentWord
+            showChar={showChar}
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+            currentWord={currentWord}
+            setCurrentWord={setCurrentWord}
+            setShowWord={setShowWord}
+            showWord={showWord}
+            Arr={Arr}
+            setArr={setArr}
+            counter={counter}
+            setCounter={setCounter}
+          />
+        </div>
+        <div
+          style={{
+            width: "60%",
+          }}
+        >
+          <Keyboard
+            showChar={showChar}
+            setShowChar={setShowChar}
+            currentWord={currentWord}
+            setCurrentWord={setCurrentWord}
+            showWord={showWord}
+            setShowWord={setShowWord}
+            counter={counter}
+            setCounter={setCounter}
+          />
+        </div>
+      </div>
     </div>
   );
 }

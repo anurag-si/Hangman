@@ -1,0 +1,14 @@
+.currentWord {
+  width: 50%;
+  background: saddlebrown;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.word {
+  color: white;
+}

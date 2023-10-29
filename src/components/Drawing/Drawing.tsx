@@ -37,7 +37,25 @@ const Drawing = (props: any) => {
           {showRightFoot && <div className="rightFoot" />}
         </div>
         {showRightFoot && (
-          <button onClick={() => window.location.reload()}>New game</button>
+          <button
+            style={{
+              marginLeft: "31rem",
+              width: "7rem",
+              backgroundColor: "#8b4513",
+              border: "none",
+              color: "white",
+              padding: "15px 32px",
+              textAlign: "center",
+              textDecoration: "none",
+              display: "inline-block",
+              fontSize: "16px",
+              cursor: "pointer",
+              borderRadius: "0.4rem",
+            }}
+            onClick={() => window.location.reload()}
+          >
+            New game
+          </button>
         )}
       </div>
     </div>

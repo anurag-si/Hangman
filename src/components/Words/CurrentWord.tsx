@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import words from "./Words";
+import "./Words.css";
 
 const CurrentWord = (props: any) => {
   const {
@@ -36,12 +37,18 @@ const CurrentWord = (props: any) => {
 
   return (
     <>
-      {characters &&
-        counter.length !== 7 &&
-        characters.map((char: any) => {
-          return <>{Arr.includes(char) && char} &nbsp;</>;
-        })}
-      {counter.length === 7 && <>{currentWord}</>}
+      <div className="currentWord">
+        {characters &&
+          counter.length !== 7 &&
+          characters.map((char: any) => {
+            return (
+              <>
+                <h2 className="word">{Arr.includes(char) && char} &nbsp;</h2>
+              </>
+            );
+          })}
+        <h2 className="word">{counter.length === 7 && <>{currentWord}</>}</h2>
+      </div>
     </>
   );
 };
